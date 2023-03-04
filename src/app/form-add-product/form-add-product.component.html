@@ -1,0 +1,37 @@
+<div class="form">    
+    <form [formGroup]="formProduct" (ngSubmit)="addProduct(formProduct.value)">
+        <h1>AGREGAR PRODUCTO</h1>
+        <div class="flex-container">
+            <p>
+                <mat-form-field appearance="fill">
+                    <mat-label>Nombre</mat-label>
+                    <input type="text" matInput placeholder="Nombre" formControlName="name">                
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field appearance="fill">
+                    <mat-label>Empresa</mat-label>
+                    <input type="text" matInput placeholder="Empresa" formControlName="company">                
+                </mat-form-field>
+            </p>
+        </div>
+        <div class="flex-container">
+            <p>
+                <mat-form-field appearance="fill">
+                    <mat-label>Precio</mat-label>
+                    <input type="number" matInput placeholder="Precio" formControlName="price">                
+                </mat-form-field>
+            </p>            
+            <p>
+                <mat-form-field appearance="fill">
+                    <mat-label>Stock</mat-label>
+                    <input type="number" matInput placeholder="Stock" formControlName="stock">                
+                </mat-form-field>
+            </p>
+        </div>                
+        <div class="btn">
+            <button mat-raised-button type="submit">Aceptar</button>
+            <button mat-raised-button type="button" color="warn" routerLink="/products">Cancelar</button>
+        </div>
+    </form>
+</div>

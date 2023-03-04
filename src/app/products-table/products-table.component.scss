@@ -1,0 +1,29 @@
+.table-container {
+  margin-top: 1%;
+  height: 70%;
+  overflow: auto;
+  }
+  
+table{
+  width: 100%;
+}
+
+th{
+  font-weight: bold;
+  font-size: medium;
+}
+
+.div-btn{
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-btn{
+  margin-left: 0.5%;
+  margin-top: 0.75%;
+}
+
+.back-btn{
+  margin-right: 0.5%;
+  margin-top: 0.75%;
+}

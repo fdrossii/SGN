@@ -1,0 +1,51 @@
+<div class="form">
+    <form [formGroup]="formProdSupplier" (ngSubmit)="addProductSupplier(formProdSupplier.value)">
+        <h1>AGREGAR PROVEEDOR</h1>
+        <div class="flex-container">
+            <p>
+                <mat-form-field appearance="fill">
+                    <mat-label>Nombre</mat-label>
+                    <input type="text" matInput placeholder="Nombre" formControlName="name">                
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field appearance="fill">
+                    <mat-label>CUIT</mat-label>
+                    <input type="text" matInput placeholder="CUIT" formControlName="cuit">                
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field appearance="fill">
+                    <mat-label>Teléfono</mat-label>
+                    <input type="text" matInput placeholder="Teléfono" formControlName="tel">                
+                </mat-form-field>
+            </p>
+        </div>
+        <div class="flex-container">
+            <p>
+                <mat-form-field appearance="fill">
+                    <mat-label>Dirección</mat-label>
+                    <input type="text" matInput placeholder="Dirección" formControlName="address">                
+                </mat-form-field>
+            </p>
+            
+            <p>
+                <mat-form-field appearance="fill">
+                    <mat-label>Ciudad</mat-label>
+                    <input type="text" matInput placeholder="Ciudad" formControlName="city">                
+                </mat-form-field>
+            </p>
+    
+            <p>
+                <mat-form-field appearance="fill">
+                    <mat-label>Provincia</mat-label>
+                    <input type="text" matInput placeholder="Provincia" formControlName="province">                
+                </mat-form-field>
+            </p>    
+        </div>       
+        <div class="btn">
+            <button mat-raised-button type="submit">Aceptar</button>
+            <button mat-raised-button type="button" routerLink="/productSuppliers">Cancelar</button>
+        </div>
+    </form>
+</div>

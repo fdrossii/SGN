@@ -1,0 +1,33 @@
+.flex{
+  display: flex;
+  justify-content: space-around;  
+  padding: 5%;
+}
+
+.table-container {  
+  
+  overflow: auto;
+  max-height: 300px;
+  width: 600px;  
+  
+}
+
+input{
+  width: 70px;
+}
+
+.saleTable{
+  width: 600px;
+  
+}
+
+.btn-addProd{
+  margin-left: 20px;
+}
+
+.btn-container{
+  display: flex;
+  justify-content:space-evenly;
+}
+
+

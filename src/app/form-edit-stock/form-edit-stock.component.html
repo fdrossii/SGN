@@ -1,0 +1,14 @@
+<div class="form" [ngClass]="{'hide': !showForm}">
+    <form [formGroup]="formStock" (ngSubmit)="editStock()">
+        <p>
+            <mat-form-field appearance="fill">
+                <mat-label>Stock</mat-label>
+                <input type="number" [(ngModel)]="stock" matInput placeholder="ej suma: 10/ resta: -10" formControlName="stock">                
+            </mat-form-field>
+        </p>
+        <div class="btn">
+            <button mat-raised-button type="submit">Aceptar</button>
+            <button mat-raised-button (click)="hideForm()" type="button">Cancelar</button>
+        </div>        
+    </form>
+</div>
